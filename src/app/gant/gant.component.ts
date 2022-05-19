@@ -1,8 +1,8 @@
-import {Component} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
+  selector: 'app-gant',
+  templateUrl: './gant.component.html',
   styles: [`
     .row-accessories {
       background-color: rgba(0, 0, 0, .15) !important;
@@ -10,7 +10,7 @@ import {Component} from '@angular/core';
   `
   ]
 })
-export class AppComponent {
+export class GantComponent implements OnInit {
   public collection: any[] = []
   columns: any[] = [];
   times: any[] = [];
@@ -39,3 +39,4 @@ export class AppComponent {
   }
 
 }
+

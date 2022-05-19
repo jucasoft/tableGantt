@@ -2,14 +2,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import {TableModule} from 'primeng/table';
+import { GantComponent } from './gant/gant.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GantComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+    imports: [
+        BrowserModule,
+        TableModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
